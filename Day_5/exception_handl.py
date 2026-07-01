@@ -21,4 +21,18 @@ try:
 except ZeroDivisionError:
     print("Error: you cannot divide by zero")
 except ValueError:
-    print("Error: Please enter valid number only")        
+    print("Error: Please enter valid number only") 
+finally:
+    print("the execution done sucessfully")       
+
+
+ #2. Write a function that safely accesses a dictionary key, catching ValueError KeyError and returning a default value of "Not Found" instead.     
+def dictionaryKey(dictionary,key):
+    try:
+      my_dict = ["name":"aamin",
+                 "rollno":34,
+                 "class"]
+    except ValueError:
+        return "Not Found"
+    except KeyError :
+     return "Not found"
