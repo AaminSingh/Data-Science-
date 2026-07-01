@@ -29,7 +29,7 @@ finally:
  #2. Write a function that safely accesses a dictionary key, catching ValueError KeyError and returning a default value of "Not Found" instead.     
 def dictionaryKey(dictionary,key):
     try:
-      my_dict = ["name":"aamin",
+      return dictionary["name":"aamin",
                  "rollno":34,
                  "class"]
     except ValueError:
