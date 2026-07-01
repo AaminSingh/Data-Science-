@@ -1,6 +1,6 @@
-num = int("ram")#Value Error
-print(10/0)#NameError ----x not defined
-print(x)
+#num = int("ram")#Value Error
+#print(10/0)#NameError ----x not defined
+#print(x)
 #Type of Built in Error in Python
 
 
@@ -10,3 +10,15 @@ NameError
 TypeError
 ValueError
 ZeroDivisionError
+
+try:
+    numerator = float(input("Enter first value"))
+    denominator = float(input("Enter second number"))
+
+    result = numerator/denominator
+    print(f"Result:{result}")
+
+except ZeroDivisionError:
+    print("Error: you cannot divide by zero")
+except ValueError:
+    print("Error: Please enter valid number only")        
