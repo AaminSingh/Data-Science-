@@ -1,28 +1,32 @@
 while True:
     print("====== MENU ======")
-    print("1. Add Student")
-    print("2. View Student")
-    print("3. Search Student")
-    print("4. Update Student")
-    print("5. Delete Student")
+    def add_student():
+      print("1. Add Student")
+    def view_student():  
+     print("2. View Student")
+    def search_student(): 
+     print("3. Search Student")
+    def update_student(): 
+      print("4. Update Student")
+    def delete_student():  
+      print("5. Delete Student")
     print("6. Exit")
 
     choice = input("Enter Choice: ")
 
     if choice == '1':
-        print("add student selected")
-        
+       add_student()
     elif choice == '2':
-        print("view student selected")
+        view_student()
         
     elif choice == '3':
-        print("search student selected")
+        search_student()
         
     elif choice == '4':
-       print("Update Student Selected")
+       update_student()
 
     elif choice == '5':
-       print("Delete Student Selected")
+       delete_student()
 
     elif choice == '6':
        print("Exiting...")
