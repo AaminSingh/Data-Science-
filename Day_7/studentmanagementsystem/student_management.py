@@ -33,5 +33,18 @@ while True:
        break
     else:
         print("Invalid choice. Please try again.")  
+
+
+class Student:
+   def __init__(self,name,age,course,RollNumber):
+        self.name = name
+        self.age = age
+        self.course = course
+        self.RollNumber = RollNumber
+
+new_student = Student("Bisht",21,"B.tech",1201) 
+print(new_student.__dict__)    
+
+        
         
                   
